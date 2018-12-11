@@ -40,120 +40,78 @@
 /******/ 	return __webpack_require__(0);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */
+/******/ ({
+
+/***/ 0:
 /***/ (function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(3);
+	module.exports = __webpack_require__(14);
 
 
 /***/ }),
-/* 1 */,
-/* 2 */
+
+/***/ 14:
+/***/ (function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	__webpack_require__(15);
+
+/***/ }),
+
+/***/ 15:
 /***/ (function(module, exports) {
 
 	"use strict";
 
-	var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+	var _templateObject = _taggedTemplateLiteral(["i am ", ", ", ""], ["i am ", ", ", ""]);
 
-	// ES6的解构赋值
+	function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
 	// {
-	//     function move({x = 0, y = 0} = {}) {
-	//         console.log(x, y);
-	//         return [x, y];
-	//     }
+	//     let str = "\u0061";
+	//     let str2 = "\uD842\uDFB7";
 
-	//     let moveOne = move({x: 3, y: 8});
-	//     console.log(moveOne);
+	//     let str3 = "hell\u{6F}"
+	//     console.log(str3);
+	// }
+
+	// codePointAt()
+	// {
+	//     var s = "𠮷";
+	//     console.log(s.length);
+	//     console.log(s.charAt(0));
+	//     console.log(s.charAt(1));
+	//     console.log(s.charCodeAt(0));
+	//     console.log(s.charCodeAt(1));
 	// }
 
 	// {
-	//     function move({x, y} = {x: 0, y: 0}) {
-	//         console.log(x, y);
-	//         return [x, y];
-	//     }
+	//     console.log("a", "\u0061");
 
-	//     let moves = move({x: 10, y: 20});
-	//     console.log(moves);
-	// }
+	//     console.log("s", "\u{20BB7}");
 
-	// {
-	//     [1, undefined, 3].map((x = 'yes') => {
-	//         console.log(x);
-	//     });
-	// }
+	//     console.log("1".padStart("2", 0));
 
-	// 圆括号的问题 
-	// {
-	// let [(a)] = [1]; // 错误
-
-	// let {x: (c)} = {} 
-
-	// let ({x: c}) = {};
-
-	// let {(x: c)} = {};
-	// }
-
-	// 函数参数
-	// {
-	// 错误
-	// function f([(z)]) {
-	//     return z;
-	// }
-
-	// [(b)] = [3]; // 页面中报错
-
-	// ({p: (d)} = {}); // 页面中报错
-
-	// [(parseInt.prop)] = [3]; // 正确
-	// }
-
-	// 用途
-	// {
-	//     let x = 1;
-	//     let y = 3;
-
-	//     [x, y] = [y, x];
-
-	//     console.log(x, y);
+	//     console.log("3".padEnd("2", 0));
 	// }
 
 	{
-	    var example = function example() {
-	        return [1, 2, 3];
+
+	    // console.log(abc`i am ${user.name}, ${user.work}`);
+
+	    var abc = function abc(s, v1, v2) {
+	        console.log(s, v1, v2);
 	    };
 
-	    var example2 = function example2() {
-	        return {
-	            foo: 11,
-	            bar: 22
-	        };
+	    var user = {
+	        name: "leixu",
+	        "work": "webSoft"
 	    };
 
-	    var _example = example(),
-	        _example2 = _slicedToArray(_example, 3),
-	        a = _example2[0],
-	        b = _example2[1],
-	        c = _example2[2];
-
-	    console.log(a, b, c);
-
-	    ;
-
-	    var _example3 = example2(),
-	        foo = _example3.foo,
-	        bar = _example3.bar;
-
-	    console.log(foo, bar);
+	    abc(_templateObject, user.name, user.work);
 	}
 
-/***/ }),
-/* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	__webpack_require__(2);
-
 /***/ })
-/******/ ]);
+
+/******/ });
