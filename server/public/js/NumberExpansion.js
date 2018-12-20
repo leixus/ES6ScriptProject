@@ -40,69 +40,35 @@
 /******/ 	return __webpack_require__(0);
 /******/ })
 /************************************************************************/
-/******/ ({
-
-/***/ 0:
+/******/ ([
+/* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(16);
+	module.exports = __webpack_require__(1);
 
 
 /***/ }),
-
-/***/ 16:
+/* 1 */
 /***/ (function(module, exports) {
 
 	"use strict";
 
-	var _templateObject = _taggedTemplateLiteral(["i am ", ", ", ""], ["i am ", ", ", ""]);
-
-	function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
-
 	// {
-	//     let str = "\u0061";
-	//     let str2 = "\uD842\uDFB7";
+	//     console.log("15", Number.isFinite(15));
 
-	//     let str3 = "hell\u{6F}"
-	//     console.log(str3);
-	// }
+	// isInteger 是否有尽，非无穷大
+	//     console.log("NaN", Number.isFinite(NaN));
 
-	// codePointAt()
-	// {
-	//     var s = "𠮷";
-	//     console.log(s.length);
-	//     console.log(s.charAt(0));
-	//     console.log(s.charAt(1));
-	//     console.log(s.charCodeAt(0));
-	//     console.log(s.charCodeAt(1));
-	// }
-
-	// {
-	//     console.log("a", "\u0061");
-
-	//     console.log("s", "\u{20BB7}");
-
-	//     console.log("1".padStart("2", 0));
-
-	//     console.log("3".padEnd("2", 0));
+	// isNaN 是否是NaN
+	//     console.log("NaN", Number.isNaN(NaN));
 	// }
 
 	{
+	    // isInteger 是否是整数
+	    console.log("25", Number.isInteger(25));
 
-	    // console.log(abc`i am ${user.name}, ${user.work}`);
-
-	    var abc = function abc(s, v1, v2) {
-	        console.log(s, v1, v2);
-	    };
-
-	    var user = {
-	        name: "leixu",
-	        "work": "webSoft"
-	    };
-
-	    abc(_templateObject, user.name, user.work);
+	    console.log("25", Number.isInteger("25"));
 	}
 
 /***/ })
-
-/******/ });
+/******/ ]);
