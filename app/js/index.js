@@ -2,4 +2,5 @@
 // import "./class/day18127";
 // import "babel-polyfill";
 // import "./class/string-expansion";
-import "./class/NumberExpansion";
+// import "./class/NumberExpansion";
+import "./class/array";

@@ -45,41 +45,122 @@
 /***/ 0:
 /***/ (function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(15);
+	module.exports = __webpack_require__(16);
 
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /***/ (function(module, exports) {
 
-	"use strict";
+	'use strict';
 
-	// {
-	//     console.log("15", Number.isFinite(15));
-
-	// isInteger 是否有尽，非无穷大
-	//     console.log("NaN", Number.isFinite(NaN));
-
-	// isNaN 是否是NaN
-	//     console.log("NaN", Number.isNaN(NaN));
-	// }
+	var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
 
 	{
-	    // isInteger 是否是整数
-	    console.log("25", Number.isInteger(25));
+	    var arr = Array.of(3, 4, 7, 9, 11);
+	    console.log('arr', arr);
+	}
 
-	    console.log("25", Number.isInteger("25"));
+	{
+	    var arrayLike = {
+	        '0': 'a',
+	        '1': 'b',
+	        '2': 'c',
+	        length: 3
+	    };
+
+	    var arr1 = [].slice.call(arrayLike);
+	    console.log(arr1);
+	    var arr2 = Array.from(arrayLike);
+	    console.log(arr2);
+	}
+
+	{
+	    var ps = document.querySelectorAll('p');
+	    console.log(ps);
+	    // Array.from(ps).filter(p => {
+	    //     return p.textContent.length < 100;
+	    // });
+	    // console.log(bb);
+	    Array.from(ps).forEach(function (item) {
+	        console.log(item.textContent);
+	    });
+	}
+
+	{
+	    console.log([1, 2, undefined].fill(7));
+
+	    console.log([1, 2, 3, 4, 5, 6, 7].fill(9, 1, 3));
+	}
+
+	{
+	    var _iteratorNormalCompletion = true;
+	    var _didIteratorError = false;
+	    var _iteratorError = undefined;
+
+	    try {
+
+	        for (var _iterator = [12, 45, 78, 89].keys()[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+	            var index = _step.value;
+
+	            console.log('index', index);
+	        }
+
+	        // for (let value of [12,'lk',78,89].values()) {
+	        //     console.log('value', value);
+	        // }
+	    } catch (err) {
+	        _didIteratorError = true;
+	        _iteratorError = err;
+	    } finally {
+	        try {
+	            if (!_iteratorNormalCompletion && _iterator.return) {
+	                _iterator.return();
+	            }
+	        } finally {
+	            if (_didIteratorError) {
+	                throw _iteratorError;
+	            }
+	        }
+	    }
+
+	    var _iteratorNormalCompletion2 = true;
+	    var _didIteratorError2 = false;
+	    var _iteratorError2 = undefined;
+
+	    try {
+	        for (var _iterator2 = [12, 45, 78, 89].entries()[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+	            var _step2$value = _slicedToArray(_step2.value, 2),
+	                _index = _step2$value[0],
+	                value = _step2$value[1];
+
+	            console.log('value', _index, value);
+	        }
+	    } catch (err) {
+	        _didIteratorError2 = true;
+	        _iteratorError2 = err;
+	    } finally {
+	        try {
+	            if (!_iteratorNormalCompletion2 && _iterator2.return) {
+	                _iterator2.return();
+	            }
+	        } finally {
+	            if (_didIteratorError2) {
+	                throw _iteratorError2;
+	            }
+	        }
+	    }
 	}
 
 /***/ }),
 
-/***/ 15:
+/***/ 16:
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
 
-	__webpack_require__(1);
+	__webpack_require__(2);
 
 /***/ })
 
