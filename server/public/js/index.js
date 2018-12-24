@@ -153,6 +153,35 @@
 	    }
 	}
 
+	{
+	    console.log([1, 2, 3, 4, 5, 6, 7].copyWithin(0, 3, 6));
+	    console.log([1, 2, 3, 4, 5].copyWithin(0, -2, -1));
+	}
+
+	{
+	    var f = function f(v) {
+	        return v > this.age;
+	    };
+
+	    console.log([1, 4, -5, 10].find(function (n) {
+	        return n < 0;
+	    }));
+	    console.log([1, 5, 10, 15].find(function (value, index, arr) {
+	        return value > 9;
+	    }));
+
+	    console.log([1, 5, 10, 15].findIndex(function (value, index, arr) {
+	        return value > 9;
+	    }));
+
+	    var person = { name: 'John', age: 20 };
+	    [10, 12, 26, 15].find(f, person); // 26
+
+	    console.log([NaN].findIndex(function (y) {
+	        return Object.is(NaN, y);
+	    }));
+	}
+
 /***/ }),
 
 /***/ 16:
