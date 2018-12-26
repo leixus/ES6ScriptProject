@@ -3,4 +3,9 @@
 // import "babel-polyfill";
 // import "./class/string-expansion";
 // import "./class/NumberExpansion";
-import "./class/array";
+// import "./class/array";
+// import "./class/fns";
+// import "./class/objects";
+// import "./class/symbols";
+// import "./class/set-map";
+import "./class/map-set-array";

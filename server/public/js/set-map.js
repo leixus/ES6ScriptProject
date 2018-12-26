@@ -45,36 +45,69 @@
 /***/ 0:
 /***/ (function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(17);
+	module.exports = __webpack_require__(20);
 
 
 /***/ }),
 
-/***/ 17:
-/***/ (function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	__webpack_require__(18);
-
-/***/ }),
-
-/***/ 18:
+/***/ 20:
 /***/ (function(module, exports) {
 
 	'use strict';
 
 	{
+	    var list = new Set();
+
+	    list.add(5);
+
+	    list.add(7);
+
+	    console.log('size', list.size);
+	}
+
+	{
+	    var s = new Set();
+
+	    [2, 3, 5, 4, 5, 2, 2].forEach(function (x) {
+	        return s.add(x);
+	    });
+
+	    var _iteratorNormalCompletion = true;
+	    var _didIteratorError = false;
+	    var _iteratorError = undefined;
+
+	    try {
+	        for (var _iterator = s[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+	            var i = _step.value;
+
+	            console.log(i);
+	        }
+	    } catch (err) {
+	        _didIteratorError = true;
+	        _iteratorError = err;
+	    } finally {
+	        try {
+	            if (!_iteratorNormalCompletion && _iterator.return) {
+	                _iterator.return();
+	            }
+	        } finally {
+	            if (_didIteratorError) {
+	                throw _iteratorError;
+	            }
+	        }
+	    }
+	}
+
+	{
 	    var map = new Map();
 
-	    var array = [];
+	    var arr = ['123', 'Hello World'];
 
-	    map.set('t', 1);
+	    map.set(arr, 456);
 
-	    array.push({ 't': 1 });
-
-	    console.log(map.get('t'));
-	    console.log(array);
+	    console.log(map);
+	    console.log(map.get(arr));
+	    console.log(arr);
 	}
 
 /***/ })

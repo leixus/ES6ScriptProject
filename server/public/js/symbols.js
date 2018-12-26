@@ -45,36 +45,22 @@
 /***/ 0:
 /***/ (function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(17);
+	module.exports = __webpack_require__(22);
 
 
 /***/ }),
 
-/***/ 17:
-/***/ (function(module, exports, __webpack_require__) {
+/***/ 22:
+/***/ (function(module, exports) {
 
 	"use strict";
 
-	__webpack_require__(18);
-
-/***/ }),
-
-/***/ 18:
-/***/ (function(module, exports) {
-
-	'use strict';
-
 	{
-	    var map = new Map();
+	    var a1 = Symbol();
 
-	    var array = [];
+	    var a2 = Symbol();
 
-	    map.set('t', 1);
-
-	    array.push({ 't': 1 });
-
-	    console.log(map.get('t'));
-	    console.log(array);
+	    console.log(a1 === a2);
 	}
 
 /***/ })

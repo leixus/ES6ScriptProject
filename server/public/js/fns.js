@@ -45,36 +45,42 @@
 /***/ 0:
 /***/ (function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(17);
+	module.exports = __webpack_require__(16);
 
 
 /***/ }),
 
-/***/ 17:
-/***/ (function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	__webpack_require__(18);
-
-/***/ }),
-
-/***/ 18:
+/***/ 16:
 /***/ (function(module, exports) {
 
 	'use strict';
 
 	{
-	    var map = new Map();
+	    var log = function log(x, y) {
+	        y = y || 'world';
+	        console.log(x, y);
+	    };
 
-	    var array = [];
+	    log(0);
+	}
 
-	    map.set('t', 1);
+	{
+	    var _console;
 
-	    array.push({ 't': 1 });
+	    (_console = console).log.apply(_console, ['a'].concat([0, 1, 2, 3]));
+	}
 
-	    console.log(map.get('t'));
-	    console.log(array);
+	{
+	    // 伪调用
+	    var test1 = function test1(x) {
+	        console.log('x： ' + x);
+	    };
+
+	    var test2 = function test2(x) {
+	        return test1(x);
+	    };
+
+	    test2(3);
 	}
 
 /***/ })

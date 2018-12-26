@@ -40,43 +40,12 @@
 /******/ 	return __webpack_require__(0);
 /******/ })
 /************************************************************************/
-/******/ ({
-
-/***/ 0:
+/******/ ([
+/* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(17);
+	(function webpackMissingModule() { throw new Error("Cannot find module \"G:\\project\\my-github\\ES6ScriptProject\\app\\js\\class\\objects.js\""); }());
 
-
-/***/ }),
-
-/***/ 17:
-/***/ (function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	__webpack_require__(18);
-
-/***/ }),
-
-/***/ 18:
-/***/ (function(module, exports) {
-
-	'use strict';
-
-	{
-	    var map = new Map();
-
-	    var array = [];
-
-	    map.set('t', 1);
-
-	    array.push({ 't': 1 });
-
-	    console.log(map.get('t'));
-	    console.log(array);
-	}
 
 /***/ })
-
-/******/ });
+/******/ ]);
