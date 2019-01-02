@@ -40,98 +40,86 @@
 /******/ 	return __webpack_require__(0);
 /******/ })
 /************************************************************************/
-/******/ ({
-
-/***/ 0:
+/******/ ([
+/* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(22);
+	module.exports = __webpack_require__(1);
 
 
 /***/ }),
-
-/***/ 22:
+/* 1 */
 /***/ (function(module, exports) {
 
 	'use strict';
 
-	var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
-
 	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+	// {
+	//     let test1 = {k: 123, o: 456};
+	//
+	//     let test2 = [1,2,3,4,5,6,7];
+	//
+	//     console.log(Object.entries(test2));
+	//
+	//     for (let [key, value] of Object.entries(test1)) {
+	//         console.log([key, value]);
+	//     }
+	// }
+	//
+	// {
+	//     const fruits = ['apple','coconut','mango','durian'];
+	//     //ES6中的for...of循环，遍历属性值
+	//     for(let fruit of fruits){
+	//         console.log(fruit);
+	//     }
+	// }
+
 	{
-	    // 对象扩展
-	    var o = 1;
-	    var l = 2;
+	    var arr = ['Hello', 'World'];
 
-	    var es5 = {
-	        o: o,
-	        l: l
-	    };
+	    var map = arr[Symbol.iterator]();
 
-	    var es6 = {
-	        o: o,
-	        l: l
-	    };
-
-	    console.log(es5);
-	    console.log(es6);
+	    console.log(map.next());
+	    console.log(map.next());
+	    console.log(map.next());
 	}
 
 	{
-	    var es5fn = {
-	        hello: function hello() {
-	            console.log('Hello');
-	        }
-	    };
-
-	    var es6fn = {
-	        hello: function hello() {
-	            console.log('World');
-	        }
-	    };
-
-	    es5fn.hello();
-	    es6fn.hello();
-	}
-
-	{
-	    var a = 'b';
-	    var es5_obj = {
-	        a: 'c',
-	        b: 'c'
-	    };
-
-	    var es6_obj = _defineProperty({}, a, 'c');
-
-	    console.log(es5_obj, es6_obj);
-	}
-
-	{
-	    console.log('字符串', Object.is('abc', 'abc'), 'abc' === 'abc');
-	    console.log('数组', Object.is([], []), [] === []);
-	}
-
-	{
-	    console.log(Object.assign({ a: 'a' }, { b: 'b' }));
-
-	    console.log(Object.assign({}, 'a'));
-	}
-
-	{
-	    var test1 = { k: 123, o: 456 };
+	    var obj = _defineProperty({
+	        start: [1, 3, 2],
+	        end: [9, 8, 6]
+	    }, Symbol.iterator, function () {
+	        var self = this;
+	        var index = 0;
+	        var arr = self.start.concat(self.end);
+	        var len = arr.length;
+	        return {
+	            next: function next() {
+	                if (index < len) {
+	                    return {
+	                        value: arr[index],
+	                        done: false
+	                    };
+	                } else {
+	                    return {
+	                        value: arr[index++],
+	                        done: true
+	                    };
+	                }
+	            }
+	        };
+	    });
 
 	    var _iteratorNormalCompletion = true;
 	    var _didIteratorError = false;
 	    var _iteratorError = undefined;
 
 	    try {
-	        for (var _iterator = Object.entries(test1)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-	            var _step$value = _slicedToArray(_step.value, 2),
-	                key = _step$value[0],
-	                value = _step$value[1];
+	        for (var _iterator = obj[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+	            var key = _step.value;
 
-	            console.log([key, value]);
+	            console.log(key);
 	        }
 	    } catch (err) {
 	        _didIteratorError = true;
@@ -149,10 +137,5 @@
 	    }
 	}
 
-	{
-	    // let {a,b,..c}
-	}
-
 /***/ })
-
-/******/ });
+/******/ ]);

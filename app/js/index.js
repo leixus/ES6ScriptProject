@@ -8,4 +8,9 @@
 // import "./class/objects";
 // import "./class/symbols";
 // import "./class/set-map";
-import "./class/map-set-array";
+// import "./class/map-set-array";
+// import "./class/proxys";
+// import "./class/classObject";
+// import './class/promises';
+// import "./class/Iterator";
+import './class/genertaors';

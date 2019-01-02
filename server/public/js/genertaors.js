@@ -45,42 +45,44 @@
 /***/ 0:
 /***/ (function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(18);
+	module.exports = __webpack_require__(19);
 
 
 /***/ }),
 
-/***/ 18:
+/***/ 19:
 /***/ (function(module, exports) {
 
 	'use strict';
 
 	{
-	    var log = function log(x, y) {
-	        y = y || 'world';
-	        console.log(x, y);
-	    };
+	    // Genertaor基本定义
+	    var helloWorldGenerator = /*#__PURE__*/regeneratorRuntime.mark(function helloWorldGenerator() {
+	        return regeneratorRuntime.wrap(function helloWorldGenerator$(_context) {
+	            while (1) {
+	                switch (_context.prev = _context.next) {
+	                    case 0:
+	                        _context.next = 2;
+	                        return 'hello';
 
-	    log(0);
-	}
+	                    case 2:
+	                        _context.next = 4;
+	                        return 'world';
 
-	{
-	    var _console;
+	                    case 4:
+	                        return _context.abrupt('return', 'ending');
 
-	    (_console = console).log.apply(_console, ['a'].concat([0, 1, 2, 3]));
-	}
+	                    case 5:
+	                    case 'end':
+	                        return _context.stop();
+	                }
+	            }
+	        }, helloWorldGenerator, this);
+	    });
 
-	{
-	    // 伪调用
-	    var test1 = function test1(x) {
-	        console.log('x： ' + x);
-	    };
+	    var hw = helloWorldGenerator();
 
-	    var test2 = function test2(x) {
-	        return test1(x);
-	    };
-
-	    test2(3);
+	    hw.next();
 	}
 
 /***/ })
