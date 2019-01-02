@@ -1,3 +1,4 @@
+import 'babel-polyfill';
 // import "./class/day18125";
 // import "./class/day18127";
 // import "babel-polyfill";
@@ -13,4 +14,7 @@
 // import "./class/classObject";
 // import './class/promises';
 // import "./class/Iterator";
-import './class/genertaors';
+// import './class/genertaors';
+// import './class/decorators';
+// import './class/modules';
+import './lottery';

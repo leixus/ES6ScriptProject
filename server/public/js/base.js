@@ -40,88 +40,21 @@
 /******/ 	return __webpack_require__(0);
 /******/ })
 /************************************************************************/
-/******/ ({
-
-/***/ 0:
+/******/ ([
+/* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(354);
+	module.exports = __webpack_require__(4);
 
 
 /***/ }),
-
-/***/ 354:
+/* 1 */,
+/* 2 */,
+/* 3 */,
+/* 4 */
 /***/ (function(module, exports) {
 
-	'use strict';
-
-	// {
-	//     // 增 删 改 查
-	//
-	//     let map = new Map();
-	//
-	//     let array = [];
-	//
-	//     // 增
-	//     map.set('t', 1);
-	//
-	//     array.push({'t': 1});
-	//
-	//     // console.log(map.get('t'));
-	//     // console.log(array);
-	//
-	//     console.info('map-array', map, array);
-	//
-	//     // 查
-	//     let map_exist = map.has('t');
-	//
-	//     let array_exist = array.find(item => item.t);
-	//
-	//     console.info('map_array', map_exist, array_exist);
-	//
-	//     // 改
-	//     map.set('t', 2);
-	//
-	//     array.forEach(item => item.t? item.t = 2 : '');
-	//
-	//     console.log('map-array-two', map, array);
-	//
-	//     // 删
-	//     map.delete('t');
-	//
-	//     let index = array.findIndex(item => item.t);
-	//
-	//     array.splice(index, 1);
-	//
-	//     // console.log(index);
-	//
-	//     console.info('map-array-del', map, array)
-	// }
-
-	{
-	    console.log('Set');
-	}
-
-	{
-	    var set = new Set();
-
-	    var array = [];
-
-	    // 增删改查
-
-	    // 增
-	    set.add({ t: 1 });
-
-	    array.push({ t: 1 });
-
-	    console.log(set, array);
-
-	    // 查
-	    var set_exist = set.has({ t: 1 });
-
-	    console.log(set_exist);
-	}
+	"use strict";
 
 /***/ })
-
-/******/ });
+/******/ ]);

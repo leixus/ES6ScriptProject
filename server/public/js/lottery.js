@@ -45,82 +45,51 @@
 /***/ 0:
 /***/ (function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(354);
+	module.exports = __webpack_require__(351);
 
 
 /***/ }),
 
-/***/ 354:
+/***/ 4:
 /***/ (function(module, exports) {
+
+	"use strict";
+
+/***/ }),
+
+/***/ 5:
+/***/ (function(module, exports) {
+
+	"use strict";
+
+/***/ }),
+
+/***/ 351:
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	// {
-	//     // 增 删 改 查
-	//
-	//     let map = new Map();
-	//
-	//     let array = [];
-	//
-	//     // 增
-	//     map.set('t', 1);
-	//
-	//     array.push({'t': 1});
-	//
-	//     // console.log(map.get('t'));
-	//     // console.log(array);
-	//
-	//     console.info('map-array', map, array);
-	//
-	//     // 查
-	//     let map_exist = map.has('t');
-	//
-	//     let array_exist = array.find(item => item.t);
-	//
-	//     console.info('map_array', map_exist, array_exist);
-	//
-	//     // 改
-	//     map.set('t', 2);
-	//
-	//     array.forEach(item => item.t? item.t = 2 : '');
-	//
-	//     console.log('map-array-two', map, array);
-	//
-	//     // 删
-	//     map.delete('t');
-	//
-	//     let index = array.findIndex(item => item.t);
-	//
-	//     array.splice(index, 1);
-	//
-	//     // console.log(index);
-	//
-	//     console.info('map-array-del', map, array)
-	// }
+	__webpack_require__(4);
 
-	{
-	    console.log('Set');
-	}
+	__webpack_require__(352);
 
-	{
-	    var set = new Set();
+	__webpack_require__(5);
 
-	    var array = [];
+	__webpack_require__(353);
 
-	    // 增删改查
+/***/ }),
 
-	    // 增
-	    set.add({ t: 1 });
+/***/ 352:
+/***/ (function(module, exports) {
 
-	    array.push({ t: 1 });
+	"use strict";
 
-	    console.log(set, array);
+/***/ }),
 
-	    // 查
-	    var set_exist = set.has({ t: 1 });
+/***/ 353:
+/***/ (function(module, exports) {
 
-	    console.log(set_exist);
-	}
+	"use strict";
 
 /***/ })
 
