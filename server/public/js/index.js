@@ -89,6 +89,27 @@
 
 	__webpack_require__(351);
 
+	var syy = new Lottery();
+	// import "./class/day18125";
+	// import "./class/day18127";
+	// import "babel-polyfill";
+	// import "./class/string-expansion";
+	// import "./class/NumberExpansion";
+	// import "./class/array";
+	// import "./class/fns";
+	// import "./class/objects";
+	// import "./class/symbols";
+	// import "./class/set-map";
+	// import "./class/map-set-array";
+	// import "./class/proxys";
+	// import "./class/classObject";
+	// import './class/promises';
+	// import "./class/Iterator";
+	// import './class/genertaors';
+	// import './class/decorators';
+	// import './class/modules';
+	// import './class/test';
+
 /***/ }),
 /* 24 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -9253,19 +9274,137 @@
 
 	'use strict';
 
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 	__webpack_require__(4);
 
-	__webpack_require__(352);
+	var _timer = __webpack_require__(352);
+
+	var _timer2 = _interopRequireDefault(_timer);
 
 	__webpack_require__(5);
 
 	__webpack_require__(353);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var copyProperties = function copyProperties(target, source) {
+	    var _iteratorNormalCompletion = true;
+	    var _didIteratorError = false;
+	    var _iteratorError = undefined;
+
+	    try {
+	        for (var _iterator = Reflect.ownKeys(source)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+	            var key = _step.value;
+
+	            if (key !== 'constructor' && key !== 'prototype' && key !== 'name') {
+	                // 对象source，获取到key
+	                var desc = Object.getOwnPropertyDescriptor(source, key);
+	                Object.defineProperty(target, key, desc);
+	            }
+	        }
+	    } catch (err) {
+	        _didIteratorError = true;
+	        _iteratorError = err;
+	    } finally {
+	        try {
+	            if (!_iteratorNormalCompletion && _iterator.return) {
+	                _iterator.return();
+	            }
+	        } finally {
+	            if (_didIteratorError) {
+	                throw _iteratorError;
+	            }
+	        }
+	    }
+	};
+
+	var mix = function mix() {
+	    var Mix = function Mix() {
+	        _classCallCheck(this, Mix);
+	    };
+
+	    for (var _len = arguments.length, mixins = Array(_len), _key = 0; _key < _len; _key++) {
+	        mixins[_key] = arguments[_key];
+	    }
+
+	    var _iteratorNormalCompletion2 = true;
+	    var _didIteratorError2 = false;
+	    var _iteratorError2 = undefined;
+
+	    try {
+	        for (var _iterator2 = mixins[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+	            var mixin = _step2.value;
+
+	            copyProperties(Mix, mixin);
+	            copyProperties(Mix.prototype, mixin.prototype);
+	        }
+	    } catch (err) {
+	        _didIteratorError2 = true;
+	        _iteratorError2 = err;
+	    } finally {
+	        try {
+	            if (!_iteratorNormalCompletion2 && _iterator2.return) {
+	                _iterator2.return();
+	            }
+	        } finally {
+	            if (_didIteratorError2) {
+	                throw _iteratorError2;
+	            }
+	        }
+	    }
+	};
+
+	var Lottery = function (_min) {
+	    _inherits(Lottery, _min);
+
+	    function Lottery() {
+	        _classCallCheck(this, Lottery);
+
+	        return _possibleConstructorReturn(this, (Lottery.__proto__ || Object.getPrototypeOf(Lottery)).call(this));
+
+	        // this.updateState();
+	    }
+
+	    /**
+	     *
+	     * */
+
+
+	    _createClass(Lottery, [{
+	        key: 'updateState',
+	        value: function updateState() {
+	            var selt = this;
+	            setTimeout(function () {
+	                self.updateState();
+	            }, 500);
+	        }
+	    }]);
+
+	    return Lottery;
+	}(min(_timer2.default));
+
+	exports.default = Lottery;
 
 /***/ }),
 /* 352 */
 /***/ (function(module, exports) {
 
 	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -9285,6 +9424,8 @@
 
 	    return Timer;
 	}();
+
+	exports.default = Timer;
 
 /***/ }),
 /* 353 */

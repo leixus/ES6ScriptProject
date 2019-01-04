@@ -17,4 +17,7 @@ import 'babel-polyfill';
 // import './class/genertaors';
 // import './class/decorators';
 // import './class/modules';
+// import './class/test';
 import './lottery';
+
+const syy=new Lottery();

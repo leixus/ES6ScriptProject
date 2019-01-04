@@ -3,3 +3,5 @@ class Timer {
         const now = new Date().getTime();
     }
 }
+
+export default Timer;
