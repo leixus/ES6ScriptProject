@@ -1,5 +1,22 @@
-# gulp打包还是不成功
+### 语法知识点
+fetch
+async/await
+promise
+let&const
+class
+箭头函数
+函数参数
+解构
+import & export
+正则
 
-### 变量的解构赋值
+### 业务知识点
+sdk开发
 
-##### 看到了用途： 用途
+
+
+### 实战知识点
+fetchMock
+webpack
+babel
+es6-polyfill
