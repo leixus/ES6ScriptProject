@@ -1,0 +1,1 @@
+{"version":3,"sources":["src\\js\\index.js"],"names":["console","log"],"mappings":";;AAAAA,QAAQC,GAAR,CAAY,OAAZ","file":"index.js","sourceRoot":"G:/project/my-github/ES6ScriptProject","sourcesContent":["console.log(\"index\");"]}

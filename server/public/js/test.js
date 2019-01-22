@@ -45,12 +45,12 @@
 /***/ 0:
 /***/ (function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(363);
+	module.exports = __webpack_require__(355);
 
 
 /***/ }),
 
-/***/ 363:
+/***/ 355:
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -201,6 +201,12 @@
 
 	    var _obj = { a: 1 };
 	    // console.log(Object.assign(obj) === obj);
+	}
+
+	{
+	    var _console;
+
+	    (_console = console).log.apply(_console, [1, 2, 3]);
 	}
 
 /***/ })

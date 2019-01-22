@@ -45,7 +45,7 @@
 /***/ 0:
 /***/ (function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(351);
+	module.exports = __webpack_require__(357);
 
 
 /***/ }),
@@ -64,7 +64,14 @@
 
 /***/ }),
 
-/***/ 351:
+/***/ 356:
+/***/ (function(module, exports) {
+
+	"use strict";
+
+/***/ }),
+
+/***/ 357:
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -77,13 +84,13 @@
 
 	__webpack_require__(4);
 
-	var _timer = __webpack_require__(352);
+	var _timer = __webpack_require__(358);
 
 	var _timer2 = _interopRequireDefault(_timer);
 
 	__webpack_require__(5);
 
-	__webpack_require__(353);
+	__webpack_require__(356);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -193,7 +200,7 @@
 
 /***/ }),
 
-/***/ 352:
+/***/ 358:
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -222,13 +229,6 @@
 	}();
 
 	exports.default = Timer;
-
-/***/ }),
-
-/***/ 353:
-/***/ (function(module, exports) {
-
-	"use strict";
 
 /***/ })
 

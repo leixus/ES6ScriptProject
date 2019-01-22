@@ -57,6 +57,10 @@
     // console.log(Object.assign(obj) === obj);
 }
 
+{
+    console.log(...[1, 2, 3])
+}
+
 
 
 
