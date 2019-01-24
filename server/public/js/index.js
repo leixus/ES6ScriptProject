@@ -9781,7 +9781,8 @@
 	{
 	    var _console;
 
-	    (_console = console).log.apply(_console, [1, 2, 3]);
+	    // console.log(...[1, 2, 3]);
+	    (_console = console).log.apply(_console, [{ a: 1 }, { b: 2 }]);
 	}
 
 /***/ })
